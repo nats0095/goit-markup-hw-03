@@ -8,13 +8,8 @@
   --brand-color-blue: rgba(33, 150, 243, 1);
 }
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--brand-color-black2);
-}
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 p,
 ul {
@@ -22,27 +17,22 @@ ul {
   padding: 0px;
   border: 0px;
 }
-.agencja,
-.portfolio {
-  margin-right: 46px;
-}
-.header,
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
+  margin: auto;
+  padding: 0 15px;
 }
 .portfolio-background {
   background-color: var(--brand-color-white);
 }
+
 .top {
   background-color: var(--brand-color-white);
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
   border: 1px;
-
   border-color: #ececec;
   border-style: solid;
 }
@@ -50,31 +40,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.main-section {
-  background-color: var(--brand-color-dark);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.main-section > .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.main-header {
-  background-color: var(--brand-color-dark);
-  color: var(--brand-color-white);
-
-  font-size: 44px;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.36;
-  padding-top: 200px;
-
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 .logo {
   color: var(--brand-color-blue);
@@ -86,6 +51,7 @@ ul {
 }
 .logo-part {
   color: var(--brand-color-black);
+  font-weight: 700;
 }
 .section {
   padding-top: 94px;
@@ -102,8 +68,6 @@ ul {
 }
 .navigation-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 46px;
 }
 .navigation-link {
@@ -122,6 +86,7 @@ ul {
   display: flex;
   gap: 50px;
 }
+
 .contact-link {
   color: var(--brand-color-gray2);
   font-style: normal;
@@ -134,29 +99,41 @@ ul {
 .contact-link:hover {
   color: var(--brand-color-blue);
 }
-.section-class {
+.main-section {
   background-color: var(--brand-color-dark);
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.section-class > .container {
+.main-section > .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-color: var(--brand-color-dark);
 }
+.main-header {
+  color: var(--brand-color-white);
+
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 .button-order {
+  font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
 
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   border: none;
   cursor: pointer;
   padding: 10px 41px 10px 42px;
@@ -172,14 +149,12 @@ ul {
   color: var(--brand-color-blue);
 }
 .filter-list {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 .filter-button {
   background-color: var(--brand-color-gray);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -202,7 +177,6 @@ ul {
   gap: 30px;
 }
 .main-description-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -211,7 +185,6 @@ ul {
   margin-bottom: 10px;
 }
 .main-description-content {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -229,7 +202,6 @@ ul {
   gap: 30px;
 }
 .caption {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -244,24 +216,34 @@ ul {
 .team {
   text-align: center;
   background-color: var(--brand-color-gray);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
+}
+.team-illustration {
+  max-width: 100%;
 }
 .team-item {
   background-color: var(--brand-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  display: inline-block;
+  margin-right: 30px;
+  max-width: 100%;
 }
 .team-image {
   display: block;
+  margin-bottom: 30px;
 }
 .team-list {
   display: flex;
-  gap: 30px;
 }
 .team-header {
   margin-bottom: 50px;
 }
-.team-staff {
+.team-description {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -272,8 +254,9 @@ ul {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team-job {
+.team-description-text {
   font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 
@@ -283,11 +266,11 @@ ul {
   color: var(--brand-color-gray2);
   padding-bottom: 30px;
 }
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 94px;
 }
 .project-information {
   border-bottom: solid 1px #ececec;
@@ -299,14 +282,12 @@ ul {
   display: block;
 }
 .project-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-type {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.88;
 
@@ -322,7 +303,6 @@ ul {
   color: var(--brand-color-white);
 }
 .our-address {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -330,16 +310,17 @@ ul {
 }
 .our-address-item-city {
   margin-top: 20px;
+  font-style: normal;
 }
 .our-address-item-email {
+  font-style: normal;
   margin-top: 9px;
   margin-bottom: 9px;
 }
 .our-address-link {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-
+  font-style: normal;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
