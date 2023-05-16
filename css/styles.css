@@ -10,6 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-black2);
+  margin: 0;
 }
 p,
 ul {
@@ -25,6 +26,7 @@ ul {
 }
 .portfolio-background {
   background-color: var(--brand-color-white);
+  padding-bottom: 50px;
 }
 
 .top {
@@ -55,7 +57,7 @@ ul {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
 }
 .list {
   list-style-type: none;
@@ -122,7 +124,6 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
-
 .button-order {
   font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-blue);
@@ -154,7 +155,9 @@ ul {
   gap: 8px;
 }
 .filter-button {
+  font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-gray);
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -171,6 +174,9 @@ ul {
 .filter-button:focus {
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .main-description-list {
   display: flex;
@@ -220,25 +226,23 @@ ul {
   padding-bottom: 94px;
   margin-bottom: 0px;
 }
-.team-illustration {
-  max-width: 100%;
-}
 .team-item {
   background-color: var(--brand-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+
   display: inline-block;
   margin-right: 30px;
-  max-width: 100%;
 }
 .team-image {
-  display: block;
   margin-bottom: 30px;
 }
 .team-list {
   display: flex;
+}
+.team-illustration {
+  margin: 0;
 }
 .team-header {
   margin-bottom: 50px;
